@@ -3,11 +3,12 @@ import random
 
 
 def draw():
-    for i  in range(10000):
-        screen.fill(pygame.Color('white'), (random.random() * width,
-                                            random.random() * height, 1, 1))
+    for i in range(1000):
+        screen.fill(pygame.Color('white'),
+                    (random.random() * width,
+                     random.random() * height, 5, 5))
 
-size = width, height = 301, 301
+size = width, height = 500, 500
 screen = pygame.display.set_mode(size)
 
 running = True
